@@ -79,10 +79,10 @@ async function sendInitialMessage(githubUsername, environment, buildName) {
   // Determine which channel to use based on the build name
   let targetChannelId = channelId;
   if (buildName.toLowerCase().includes('regression')) {
-    targetChannelId = "C07FJG27D2L"; // Regression Build Channel
+    targetChannelId = "CGJFM3XCM"; // Regression Build Channel
     console.log(`Using Regression channel: ${targetChannelId}`);
   } else if (buildName.toLowerCase().includes('smoke')) {
-    targetChannelId = "C0189FJRC9E"; // Prod Release Channel
+    targetChannelId = "CGJFM3XCM"; // Prod Release Channel
     console.log(`Using Smoke channel: ${targetChannelId}`);
   } else {
     console.log(`Using default channel from environment: ${targetChannelId}`);

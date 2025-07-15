@@ -21,10 +21,10 @@ let targetChannelId = mainChannelId;
 
 if (workflowName.toLowerCase().includes('regression')) {
   console.log('Detected regression workflow, using regression channel');
-  targetChannelId = "C07FJG27D2L"; // Regression Build Channel
+  targetChannelId = "CGJFM3XCM"; // Regression Build Channel
 } else if (workflowName.toLowerCase().includes('smoke')) {
   console.log('Detected smoke workflow, using smoke channel');
-  targetChannelId = "C0189FJRC9E"; // Prod Release Channel
+  targetChannelId = "CGJFM3XCM"; // Prod Release Channel
 } else {
   console.log(`Using default channel from environment: ${targetChannelId}`);
 }
