@@ -15,8 +15,8 @@ jobs:
       # Fixed environment - always stagingLatest
       TEST_ENV: "stagingLatest"
       SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-      SLACK_CHANNEL_ID: "C0189FJRC9E"
-      FAILURE_SLACK_CHANNEL_ID: "C07FJG27D2L"
+      SLACK_CHANNEL_ID: "CGJFM3XCM"
+      FAILURE_SLACK_CHANNEL_ID: "CGJFM3XCM"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -67,7 +67,7 @@ jobs:
           echo "thread_ts=$threadTs" >> $env:GITHUB_OUTPUT
         env:
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-          SLACK_CHANNEL_ID: "C0189FJRC9E"
+          SLACK_CHANNEL_ID: "CGJFM3XCM"
           GITHUB_ACTIONS: "true"
 
       - name: Debug - Environment Variables
@@ -199,7 +199,7 @@ jobs:
           node helpers/postBuildStatus.js "success" "$threadTs"
         env:
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-          SLACK_CHANNEL_ID: "C0189FJRC9E"
+          SLACK_CHANNEL_ID: "CGJFM3XCM"
           GITHUB_SERVER_URL: ${{ github.server_url }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_RUN_ID: ${{ github.run_id }}
@@ -227,8 +227,8 @@ jobs:
           node helpers/postBuildStatus.js "failure" "$threadTs"
         env:
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-          SLACK_CHANNEL_ID: "C0189FJRC9E"
-          FAILURE_SLACK_CHANNEL_ID: "C07FJG27D2L"
+          SLACK_CHANNEL_ID: "CGJFM3XCM"
+          FAILURE_SLACK_CHANNEL_ID: "CGJFM3XCM"
           GITHUB_SERVER_URL: ${{ github.server_url }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_RUN_ID: ${{ github.run_id }}

@@ -37,7 +37,7 @@ Edit the `.env` file in the project root and uncomment/update the Slack settings
 ```
 ### Slack Integration Settings ###
 SLACK_TOKEN=your_slack_token_here
-SLACK_CHANNEL_ID=C07FJG27D2L  # Or your custom channel ID
+SLACK_CHANNEL_ID=CGJFM3XCM  # Or your custom channel ID
 ```
 
 ### Option 2: Set in terminal

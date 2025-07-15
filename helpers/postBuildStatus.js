@@ -12,8 +12,8 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.join(__dirname, '..', '.env') });
 
 const slackToken = process.env.SLACK_TOKEN;
-const mainChannelId = process.env.SLACK_CHANNEL_ID || "C0189FJRC9E"; // Replace with your main channel ID Prod_release = C0189FJRC9E , Automation_regression_build= C07FJG27D2L
-const failureChannelId = process.env.FAILURE_SLACK_CHANNEL_ID || "C07FJG27D2L"; // Replace with your failure channel ID
+const mainChannelId = process.env.SLACK_CHANNEL_ID || "CGJFM3XCM"; // Replace with your main channel ID Prod_release = C0189FJRC9E , Automation_regression_build= C07FJG27D2L
+const failureChannelId = process.env.FAILURE_SLACK_CHANNEL_ID || "CGJFM3XCM"; // Replace with your failure channel ID
 
 // Determine which workflow is running based on GITHUB_WORKFLOW environment variable
 const workflowName = process.env.GITHUB_WORKFLOW || '';

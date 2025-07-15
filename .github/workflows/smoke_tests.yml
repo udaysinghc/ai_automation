@@ -18,7 +18,7 @@ on:
       SlackChannelId:
         required: false
         type: string
-        default: "C0189FJRC9E"
+        default: "CGJFM3XCM"
       FailureSlackChannelId:
         required: false
         type: string
